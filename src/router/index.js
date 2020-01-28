@@ -3,14 +3,15 @@ import VueRouter from "vue-router";
 import Login from "../views/Login/Login";
 import Home from "../views/Home/Home";
 import Register from "../views/Register/Register";
+import Manager from "../views/Manager/Manager";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "login",
-    component: Login
+    name: "home",
+    component: Home
   },
   {
     path: "/register",
@@ -18,12 +19,17 @@ const routes = [
     component: Register
   },
   {
-    path: "/home",
-    name: "home",
+    path: "/login",
+    name: "login",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: Home
+    component: Login
+  },
+  {
+    path: "/manager",
+    name: "manager",
+    component: Manager
   }
 ];
 
