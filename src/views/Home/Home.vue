@@ -3,7 +3,9 @@
     <el-header>
       <HomeHeader />
     </el-header>
-    <el-main></el-main>
+    <el-main>
+      <router-view />
+    </el-main>
     <el-footer />
   </el-container>
 </template>
